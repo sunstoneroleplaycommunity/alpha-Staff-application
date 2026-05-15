@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunstone RolePlay™ | Staff Applications</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a class="brand" href="#home">
+        <img src="assets/sunstone-logo.png" alt="Sunstone RolePlay logo" />
+        <span>Sunstone RolePlay™</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">Development</a>
+        <a href="#requirements">Requirements</a>
+        <a href="#apply">Apply</a>
+        <a href="#google-form">Google Form</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+
+      <div class="hero-content">
+        <img class="hero-logo" src="assets/sunstone-logo.png" alt="Sunstone RolePlay logo" />
+        <p class="eyebrow">Console Roleplay Community • PS5 & Xbox</p>
+        <h1>Sunstone RolePlay™ Staff Applications</h1>
+        <p class="hero-text">
+          Sunstone RolePlay™ is currently in active development. We are building a mature,
+          organized, and professional console roleplay community, and we are only searching for
+          experienced staff members who are ready to help create the foundation from the ground up.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#apply">Start Application</a>
+          <a class="btn secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSdAtKedGeNxmT_deuCbytPyWjUxfaQz4FajB6i3OTJ6OsWSFA/viewform?usp=dialog" target="_blank">Open Google Form</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section split">
+      <div>
+        <p class="section-kicker">Currently in Development</p>
+        <h2>We are building Sunstone the right way.</h2>
+      </div>
+      <div class="panel">
+        <p>
+          Sunstone RolePlay™ is not rushing to open before the community is ready. Our current focus is
+          building department structure, staff policies, member expectations, application systems,
+          server standards, and a clean foundation for future patrols.
+        </p>
+        <p>
+          Because of this, staff applications are selective. We are looking for people with previous
+          roleplay or moderation experience, strong communication skills, patience, maturity, and the
+          ability to represent Sunstone professionally.
+        </p>
+      </div>
+    </section>
+
+    <section id="requirements" class="section">
+      <p class="section-kicker">What We Are Looking For</p>
+      <h2>Experienced. Mature. Professional.</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Experienced Staff</h3>
+          <p>Applicants should understand roleplay communities, moderation, chain of command, and how to handle issues calmly.</p>
+        </article>
+        <article class="card">
+          <h3>Mature Leadership</h3>
+          <p>We need staff who can communicate respectfully, make fair decisions, and stay professional during difficult situations.</p>
+        </article>
+        <article class="card">
+          <h3>Development Mindset</h3>
+          <p>Sunstone is still being built, so applicants must be willing to help create systems, improve ideas, and support growth.</p>
+        </article>
+        <article class="card">
+          <h3>Console Focused</h3>
+          <p>Our community is designed for PlayStation 5 and Xbox players who want serious roleplay without needing a PC server.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="apply" class="section application-section">
+      <div class="application-copy">
+        <p class="section-kicker">Integrated Application</p>
+        <h2>Submit your staff interest directly here.</h2>
+        <p>
+          This form sends a staff application summary to the Sunstone RolePlay™ Discord webhook.
+          You can also complete the official Google Form below.
+        </p>
+      </div>
+
+      <form id="staffApplication" class="application-form">
+        <label>Discord Username
+          <input name="discord" type="text" placeholder="Example: username#0001" required />
+        </label>
+
+        <label>Platform
+          <select name="platform" required>
+            <option value="">Select platform</option>
+            <option>PlayStation 5</option>
+            <option>Xbox Series X|S</option>
+            <option>Both</option>
+          </select>
+        </label>
+
+        <label>Age
+          <input name="age" type="number" min="13" placeholder="Your age" required />
+        </label>
+
+        <label>Previous Staff Experience
+          <textarea name="experience" rows="5" placeholder="Describe your previous staff, moderation, leadership, or roleplay experience." required></textarea>
+        </label>
+
+        <label>Why should Sunstone choose you?
+          <textarea name="why" rows="5" placeholder="Explain what you can bring to the development team." required></textarea>
+        </label>
+
+        <label>Availability
+          <input name="availability" type="text" placeholder="Example: Weekdays after 5 PM EST" required />
+        </label>
+
+        <button class="btn primary full" type="submit">Send to Discord</button>
+        <p id="formStatus" class="form-status"></p>
+      </form>
+    </section>
+
+    <section id="google-form" class="section google-form">
+      <p class="section-kicker">Official Application</p>
+      <h2>Google Form Application</h2>
+      <p>Complete the official Sunstone RolePlay™ application using the embedded form below.</p>
+
+      <div class="form-frame">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdAtKedGeNxmT_deuCbytPyWjUxfaQz4FajB6i3OTJ6OsWSFA/viewform?usp=dialog" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/sunstone-logo.png" alt="Sunstone RolePlay logo" />
+    <p>Sunstone RolePlay™ © 2026</p>
+    <small>Not affiliated with or endorsed by Rockstar Games.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
