@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunstone RolePlay™ | Staff Application</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <header class="nav">
+    <div class="brand">
+      <img src="logo.png" alt="Sunstone RolePlay logo" />
+      <span>Sunstone RolePlay™</span>
+    </div>
+    <a class="discord-btn" href="#apply">Apply Now</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Staff Recruitment • Development Phase</p>
+        <h1>Help Build the Future of Sunstone RolePlay™</h1>
+        <p>
+          Sunstone RolePlay is actively recruiting experienced, mature, and dependable staff members
+          to help shape our console-based roleplay community before launch.
+        </p>
+        <div class="hero-actions">
+          <a href="#apply" class="primary-btn">Start Staff Application</a>
+          <a href="#expectations" class="secondary-btn">View Expectations</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <img src="logo.png" alt="Sunstone gem logo" />
+        <h2>Now Hiring Staff</h2>
+        <p>Moderation • Support • Recruitment • Community Leadership</p>
+      </div>
+    </section>
+
+    <section id="expectations" class="section">
+      <h2>What We Are Looking For</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Maturity</h3>
+          <p>Staff members must remain professional, respectful, and unbiased in all situations.</p>
+        </div>
+        <div class="card">
+          <h3>Experience</h3>
+          <p>Prior roleplay, moderation, leadership, or Discord community experience is preferred.</p>
+        </div>
+        <div class="card">
+          <h3>Commitment</h3>
+          <p>Applicants should be ready to help build departments, enforce rules, and support members.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply" class="application-wrap">
+      <div class="form-header">
+        <p class="eyebrow">Official Application</p>
+        <h2>Sunstone RolePlay™ Staff Application</h2>
+        <p>All submitted responses will be sent directly to the Sunstone RolePlay Discord staff webhook.</p>
+      </div>
+
+      <form id="staffApplication">
+        <div class="grid">
+          <label>Email Address *
+            <input name="Email Address" type="email" required />
+          </label>
+
+          <label>Discord Username / ID *
+            <input name="Discord Username / ID" type="text" required placeholder="Example: Hunter#0001 or user ID" />
+          </label>
+
+          <label>Age *
+            <input name="Age" type="number" min="13" required />
+          </label>
+
+          <label>Timezone *
+            <input name="Timezone" type="text" required placeholder="Example: EST, CST, PST" />
+          </label>
+        </div>
+
+        <label>What staff position are you applying for? *
+          <select name="Position Applying For" required>
+            <option value="">Select one</option>
+            <option>Trial Moderator</option>
+            <option>Moderator</option>
+            <option>Senior Moderator</option>
+            <option>Administration</option>
+            <option>Recruitment Team</option>
+            <option>Department Staff</option>
+            <option>Development Team</option>
+          </select>
+        </label>
+
+        <label>Do you have previous staff experience? *
+          <textarea name="Previous Staff Experience" required></textarea>
+        </label>
+
+        <label>Why do you want to become staff for Sunstone RolePlay? *
+          <textarea name="Why Staff" required></textarea>
+        </label>
+
+        <label>What makes you a good fit for our staff team? *
+          <textarea name="Good Fit" required></textarea>
+        </label>
+
+        <label>How would you handle a disrespectful member in a voice channel? *
+          <textarea name="Disrespectful Member Scenario" required></textarea>
+        </label>
+
+        <label>How would you handle staff bias, favoritism, or abuse of power? *
+          <textarea name="Staff Bias Scenario" required></textarea>
+        </label>
+
+        <label>A member is arguing with another member and both claim the other started it. What do you do? *
+          <textarea name="Member Argument Scenario" required></textarea>
+        </label>
+
+        <label>A friend breaks a community rule. How would you handle it? *
+          <textarea name="Friend Rulebreak Scenario" required></textarea>
+        </label>
+
+        <label>How active can you be each week? *
+          <textarea name="Weekly Availability" required></textarea>
+        </label>
+
+        <label>Are you currently staff in any other roleplay community? *
+          <textarea name="Other Community Staff" required></textarea>
+        </label>
+
+        <label>Do you understand that staff positions do not guarantee special treatment, rank, or authority outside assigned duties? *
+          <select name="Staff Understanding" required>
+            <option value="">Select one</option>
+            <option>Yes, I understand</option>
+            <option>No</option>
+          </select>
+        </label>
+
+        <label>Additional comments
+          <textarea name="Additional Comments"></textarea>
+        </label>
+
+        <button type="submit" class="submit-btn">Submit Staff Application</button>
+        <p id="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Sunstone RolePlay™. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
